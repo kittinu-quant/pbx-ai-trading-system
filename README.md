@@ -10,8 +10,13 @@ This project demonstrates a **full-stack quantitative trading system**:
 The system represents a **research-to-production pipeline**,  
 aimed at developing an **institutional-grade alpha engine**.
 
-The system is designed as a **research-to-production pipeline**,  
-with the goal of evolving into an **institutional-grade alpha engine**.
+## Quick Summary
+
+- Multi-asset quantitative trading system (AAPL, BTC, Gold)
+- Portfolio Sharpe: 0.72 | Max Drawdown: -22%
+- Includes backtesting, parameter optimization, and out-of-sample validation
+- Focus: building a robust, scalable alpha discovery framework
+
 
 # pbx-ai-trading-system
 Institutional-grade AI trading system for alpha generation, risk control, and scalable execution
