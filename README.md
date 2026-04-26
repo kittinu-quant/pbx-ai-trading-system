@@ -30,6 +30,12 @@ Max Drawdown: -35%
 
 ![Equity Curve](equity_curve.png)
 
+#Key Observation
+
+- Strategy underperforms buy & hold on AAPL
+- Indicates naive EMA crossover lacks strong edge
+- Further improvements required via filtering and risk control
+
 # Research & Optimization
 
 - Tested EMA parameter combinations (10–200)
