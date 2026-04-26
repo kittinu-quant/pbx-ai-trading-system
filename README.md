@@ -29,3 +29,10 @@ Sharpe: 0.199
 Max Drawdown: -35%  
 
 ![Equity Curve](equity_curve.png)
+
+## Research & Optimization
+
+- Tested EMA parameter combinations (10–200)
+- Compared performance across multiple assets
+- Observed that naive EMA crossover underperforms buy & hold
+- Next step: integrate volatility filter and risk control
