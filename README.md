@@ -25,6 +25,19 @@ aimed at developing an **institutional-grade alpha engine**.
 - Includes backtesting, parameter optimization, and out-of-sample validation
 - Focus: building a robust, scalable alpha discovery framework
 
+## Results Summary
+
+| Metric | Value |
+|------|------|
+| Portfolio Sharpe | 0.72 |
+| Max Drawdown | -22% |
+| Assets | AAPL, BTC, Gold |
+
+The system demonstrates improved robustness when combining:
+- Multi-asset diversification
+- Volatility-aware filtering
+- Portfolio-level optimization
+
 ## Why This Matters
 
 Most simple strategies fail due to lack of robustness.
@@ -314,7 +327,8 @@ Instead of naive equal weighting, we applied **volatility-adjusted allocation** 
 
 ![Portfolio Equity Curve](Portfolio%20Equity%20Curve.png)
 
----
+The portfolio demonstrates steady growth with controlled drawdowns, 
+highlighting the benefit of diversification and risk-aware allocation.
 
 ## Methodology
 
