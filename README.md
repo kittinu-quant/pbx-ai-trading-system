@@ -69,3 +69,8 @@ This project focuses on building a systematic framework to discover and improve 
 - Test trend regime filter (ADX)
 - Apply position sizing (risk-based)
 - Evaluate performance across BTC, Gold
+
+#Target
+- Sharpe > 1.0
+- Max Drawdown < 20%
+- Robust across multiple assets
