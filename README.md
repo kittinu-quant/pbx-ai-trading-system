@@ -1,11 +1,14 @@
-#System Positioning
+## ⚡ System Positioning
 
-This project demonstrates a **full-stack quantitative trading framework**:
+This project demonstrates a **full-stack quantitative trading system**:
 
-- Alpha generation (EMA-based signal)
+- Alpha generation (EMA-based signals)
 - Robustness validation (parameter sensitivity + out-of-sample testing)
 - Portfolio construction (multi-asset + volatility-adjusted allocation)
 - Risk-aware design for scalable deployment
+
+The system represents a **research-to-production pipeline**,  
+aimed at developing an **institutional-grade alpha engine**.
 
 The system is designed as a **research-to-production pipeline**,  
 with the goal of evolving into an **institutional-grade alpha engine**.
