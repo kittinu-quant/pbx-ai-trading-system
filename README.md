@@ -1,6 +1,6 @@
 ## ⚡ System Positioning
 
-This project demonstrates a **full-stack quantitative trading system**:
+This project demonstrates a full-stack quantitative trading system for alpha generation, validation, and portfolio construction:
 
 - Alpha generation (EMA-based signals)
 - Robustness validation (parameter sensitivity + out-of-sample testing)
