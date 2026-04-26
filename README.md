@@ -338,4 +338,18 @@ This approach:
 - Risk parity allocation  
 - Maximum Sharpe optimization  
 - Dynamic rebalancing  
-- Regime-aware portfolio weighting  
+- Regime-aware portfolio weighting
+
+# System Positioning
+
+This project represents a **research-to-production transition framework**:
+
+- Alpha discovery → validated via backtesting
+- Robustness → tested via parameter sensitivity
+- Generalization → evaluated via out-of-sample testing
+- Portfolio construction → applied for risk-adjusted returns
+
+The system is designed to evolve into an **institutional-grade alpha engine**.
+
+This project demonstrates a full-stack quantitative trading framework:
+from signal generation → validation → portfolio construction → risk-aware deployment.
