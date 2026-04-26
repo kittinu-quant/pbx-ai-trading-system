@@ -191,3 +191,16 @@ This suggests that:
 > Edge may emerge when combining trend + volatility regime filtering.
 
 Further work is required to validate robustness.
+
+# Portfolio Extension (Next Step)
+
+To move toward institutional deployment, the next phase will include:
+
+- Multi-asset portfolio construction (AAPL, BTC, Gold)
+- Correlation-aware allocation
+- Risk parity / volatility targeting
+- Portfolio-level Sharpe optimization
+
+Objective:
+
+> Transform single-strategy alpha into a scalable portfolio-level return stream.
