@@ -19,3 +19,8 @@ data = backtest(data)
 plt.plot(data['Equity'])
 plt.title("Equity Curve")
 plt.show()
+
+from performance import sharpe_ratio
+
+returns = data['Strategy'].dropna()
+print("Sharpe:", sharpe_ratio(returns))
