@@ -78,3 +78,39 @@ This project focuses on building a systematic framework to discover and improve 
 - Sharpe > 1.0
 - Max Drawdown < 20%
 - Robust across multiple assets
+
+# Parameter Optimization (Heatmap)
+
+![EMA Heatmap](heatmap.png) 
+
+## Parameter Optimization (EMA Heatmap)
+
+To evaluate robustness, we performed a grid search over EMA parameters:
+
+- Short EMA: 5–30
+- Long EMA: 40–100
+
+The heatmap below shows Sharpe Ratio across parameter combinations.
+
+![EMA Heatmap](heatmap.png)
+
+#Key Insights
+
+- Performance varies significantly across parameter space
+- No strong, stable high-Sharpe region observed
+- Indicates the base EMA crossover lacks persistent edge
+- Highlights need for:
+  - Volatility filtering
+  - Risk management
+  - Multi-factor signals
+
+# Interpretation
+
+A robust strategy should exhibit:
+
+- Broad region of positive Sharpe
+- Stability across parameter variations
+
+Current results suggest:
+
+> The strategy is sensitive to parameter selection and not yet production-ready.
