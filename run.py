@@ -14,8 +14,6 @@ print(data[['Close','Signal','Equity']])
 
 import matplotlib.pyplot as plt
 
-data = backtest(data)
-
 plt.plot(data['Equity'])
 plt.title("Equity Curve")
 plt.show()
@@ -24,3 +22,11 @@ from performance import sharpe_ratio
 
 returns = data['Strategy'].dropna()
 print("Sharpe:", sharpe_ratio(returns))
+
+from performance import sharpe_ratio, max_drawdown
+
+returns = data['Strategy'].dropna()
+equity = data['Equity']
+
+print("Sharpe:", sharpe_ratio(returns))
+print("Max Drawdown:", max_drawdown(equity))
