@@ -52,10 +52,14 @@ This project focuses on building a systematic framework to discover and improve 
 | Asset | Sharpe | Max Drawdown |
 |------|--------|--------------|
 | AAPL | 0.20 | -35% |
-| BTC  | TBD | TBD |
-| Gold | TBD | TBD |
-> Note: BTC and Gold results will be added after multi-asset backtesting.
->
+| BTC  | 0.62 | -65% |
+| Gold | 0.44 | -30% |
+
+**Observation:**
+- Strategy performs better on BTC compared to AAPL
+- High drawdown suggests lack of risk control
+- Indicates need for volatility filtering and position sizing
+
 > #Improvement Plan
 
 - Add volatility filter (ATR)
