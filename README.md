@@ -1,3 +1,15 @@
+#System Positioning
+
+This project demonstrates a **full-stack quantitative trading framework**:
+
+- Alpha generation (EMA-based signal)
+- Robustness validation (parameter sensitivity + out-of-sample testing)
+- Portfolio construction (multi-asset + volatility-adjusted allocation)
+- Risk-aware design for scalable deployment
+
+The system is designed as a **research-to-production pipeline**,  
+with the goal of evolving into an **institutional-grade alpha engine**.
+
 # pbx-ai-trading-system
 Institutional-grade AI trading system for alpha generation, risk control, and scalable execution
 Overview
@@ -339,17 +351,6 @@ This approach:
 - Maximum Sharpe optimization  
 - Dynamic rebalancing  
 - Regime-aware portfolio weighting
-
-# System Positioning
-
-This project represents a **research-to-production transition framework**:
-
-- Alpha discovery → validated via backtesting
-- Robustness → tested via parameter sensitivity
-- Generalization → evaluated via out-of-sample testing
-- Portfolio construction → applied for risk-adjusted returns
-
-The system is designed to evolve into an **institutional-grade alpha engine**.
 
 This project demonstrates a full-stack quantitative trading framework:
 from signal generation → validation → portfolio construction → risk-aware deployment.
