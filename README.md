@@ -79,34 +79,57 @@ This project focuses on building a systematic framework to discover and improve 
 - Max Drawdown < 20%
 - Robust across multiple assets
 
-# Parameter Optimization (EMA Heatmap)
+## Parameter Optimization (EMA Heatmap)
 
-To evaluate robustness, we performed a grid search over EMA parameters:
+To evaluate parameter robustness, we performed a grid search over EMA crossover parameters:
 
-- Short EMA: 5–30
-- Long EMA: 40–100
+- Short EMA: 5–30  
+- Long EMA: 40–100  
 
-The heatmap below shows Sharpe Ratio across parameter combinations.
+The heatmap below shows the Sharpe Ratio across parameter combinations.
 
 ![EMA Heatmap](heatmap.png)
 
-#Key Insights
+---
 
-- Performance varies significantly across parameter space
-- No strong, stable high-Sharpe region observed
-- Indicates the base EMA crossover lacks persistent edge
-- Highlights need for:
-  - Volatility filtering
-  - Risk management
-  - Multi-factor signals
+# Key Findings
+
+- Performance varies significantly across parameter space  
+- No clear, stable high-Sharpe region observed  
+- Indicates the base EMA crossover lacks persistent alpha  
+- Strategy performance is sensitive to parameter selection  
+
+---
 
 # Interpretation
 
-A robust strategy should exhibit:
+A robust systematic strategy should exhibit:
 
-- Broad region of positive Sharpe
-- Stability across parameter variations
+- A broad region of consistently positive Sharpe  
+- Stability across parameter variations  
+- Low sensitivity to specific parameter choices  
 
 Current results suggest:
 
-> The strategy is sensitive to parameter selection and not yet production-ready.
+> The strategy is not robust and requires further enhancement before deployment.
+
+---
+
+# Next Improvements
+
+To move toward a production-ready system:
+
+- Add volatility filtering (e.g., ATR-based regime filter)  
+- Implement position sizing (risk-based allocation)  
+- Introduce stop-loss and risk control mechanisms  
+- Combine with additional signals (multi-factor approach)  
+
+---
+
+# Research Objective
+
+This project focuses on building a **systematic framework** for:
+
+- Discovering trading edge through data-driven iteration  
+- Evaluating robustness via parameter sensitivity  
+- Transitioning from simple strategies to scalable alpha systems  
