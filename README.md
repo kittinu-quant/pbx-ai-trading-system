@@ -22,3 +22,10 @@ Philosophy
 Author
 
 Kittinu Muayteng
+
+## 📊 Strategy Performance
+
+Sharpe: 0.199  
+Max Drawdown: -35%  
+
+![Equity Curve](equity_curve.png)
