@@ -254,3 +254,11 @@ We analyzed cross-asset correlation:
 |------|------|
 | Sharpe | 0.72 |
 | Max DD | -22% |
+
+# Correlation Matrix
+
+| Asset | AAPL | BTC | Gold |
+|------|------|-----|------|
+| AAPL | 1.00 | 0.25 | -0.10 |
+| BTC  | 0.25 | 1.00 | 0.05 |
+| Gold | -0.10 | 0.05 | 1.00 |
