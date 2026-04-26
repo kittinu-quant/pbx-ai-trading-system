@@ -264,3 +264,78 @@ We analyzed cross-asset correlation:
 | Gold | -0.10 | 0.05 | 1.00 |
 
 “This project focuses on building a research-driven framework for discovering and validating trading edge, rather than presenting a finished alpha strategy.”
+
+## 📊 Portfolio Simulation (Volatility-Adjusted Allocation)
+
+We constructed a multi-asset portfolio using:
+
+- AAPL (Equities)
+- BTC (Crypto)
+- Gold (Commodities)
+
+Instead of naive equal weighting, we applied **volatility-adjusted allocation** to better control risk exposure across assets.
+
+---
+
+#Portfolio Equity Curve
+
+![Portfolio Equity Curve](equity_curve.png)
+
+---
+
+#Methodology
+
+- Individual asset returns were generated using an EMA-based trading strategy  
+- Portfolio weights were computed using **inverse volatility weighting**
+
+Formula:
+
+w_i = (1 / σ_i) / Σ(1 / σ_i)
+
+Where:
+- σ_i = volatility of asset i
+
+This approach:
+- Reduces exposure to high-volatility assets (e.g., BTC)
+- Improves overall portfolio stability
+
+---
+
+#Performance Summary
+
+| Metric | Value |
+|--------|------|
+| Sharpe Ratio | 0.72 |
+| Max Drawdown | -22% |
+
+---
+
+# Key Observations
+
+- Portfolio shows smoother equity growth vs single-asset strategies  
+- Drawdowns are reduced due to diversification  
+- Combining low-correlated assets improves risk-adjusted returns  
+
+---
+
+#Insight
+
+> Edge is not only created by strategy —  
+> but amplified through portfolio construction.
+
+---
+
+# Validation Note
+
+- Results are based on in-sample backtesting  
+- Transaction costs and slippage are not included  
+- Further validation (out-of-sample, walk-forward) is required  
+
+---
+
+# Next Steps
+
+- Risk parity allocation  
+- Maximum Sharpe optimization  
+- Dynamic rebalancing  
+- Regime-aware portfolio weighting  
