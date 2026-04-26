@@ -292,7 +292,7 @@ Instead of naive equal weighting, we applied **volatility-adjusted allocation** 
 
 ---
 
-#Portfolio Equity Curve
+## 📈 Portfolio Equity Curve
 
 ![Portfolio Equity Curve](Portfolio%20Equity%20Curve.png)
 
