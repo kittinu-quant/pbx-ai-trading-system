@@ -1,3 +1,11 @@
+## Overview
+
+This project builds a research-to-production quantitative trading pipeline, 
+designed to discover, validate, and scale alpha strategies across multiple assets.
+
+The focus is not on a single strategy, but on constructing a robust framework 
+for systematic alpha generation and portfolio deployment.
+
 ## ⚡ System Positioning
 
 This project demonstrates a full-stack quantitative trading system for alpha generation, validation, and portfolio construction:
