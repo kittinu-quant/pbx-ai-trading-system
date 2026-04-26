@@ -36,3 +36,11 @@ Max Drawdown: -35%
 - Compared performance across multiple assets
 - Observed that naive EMA crossover underperforms buy & hold
 - Next step: integrate volatility filter and risk control
+
+## 🌍 Multi-Asset Results
+
+| Asset | Sharpe | Max Drawdown |
+|------|--------|--------------|
+| AAPL | 0.20 | -35% |
+| BTC  | TBD | TBD |
+| Gold | TBD | TBD |
