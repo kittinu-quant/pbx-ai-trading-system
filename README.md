@@ -32,12 +32,6 @@ aimed at developing an **institutional-grade alpha engine**.
 | Max Drawdown | -22% |
 | Assets | AAPL, BTC, Gold |
 
-The system demonstrates improved robustness through:
-
-- Multi-asset diversification  
-- Volatility-aware filtering  
-- Portfolio-level optimization  
-
 ---
 
 ## Why This Matters
@@ -68,6 +62,23 @@ This framework focuses on:
 
 ---
 
+## Strategy Performance
+
+![Equity Curve](equity_curve.png)
+
+| Metric | Value |
+|------|------|
+| Sharpe | 0.20 |
+| Max Drawdown | -35% |
+
+---
+
+## Parameter Optimization (EMA Heatmap)
+
+![EMA Heatmap](heatmap.png)
+
+---
+
 ## Research Findings
 
 Key observations from experiments:
@@ -76,12 +87,6 @@ Key observations from experiments:
 - Performance varies across assets (BTC > AAPL)  
 - High drawdown indicates missing risk control  
 
-Implications:
-
-- Strategy requires volatility filtering  
-- Position sizing is critical  
-- Multi-factor signals are needed  
-
 ---
 
 ## Portfolio Construction
@@ -89,25 +94,13 @@ Implications:
 ### Allocation Method
 - Inverse volatility weighting
 
-Formula:
-
-w_i = (1 / σ_i) / Σ(1 / σ_i)
-
-Where:
-- σ_i = volatility of asset i
-
-This approach:
-- Reduces exposure to high-volatility assets (e.g., BTC)
-- Improves portfolio stability
-
 ---
 
 ## Portfolio Equity Curve
 
 ![Portfolio Equity Curve](Portfolio%20Equity%20Curve.png)
 
-The portfolio demonstrates steady growth with controlled drawdowns,  
-highlighting the benefit of diversification and risk-aware allocation.
+The portfolio demonstrates steady growth with controlled drawdowns.
 
 ---
 
@@ -122,12 +115,6 @@ highlighting the benefit of diversification and risk-aware allocation.
 
 ## Validation & Robustness
 
-Validation steps performed:
-
-- Parameter sensitivity analysis (EMA heatmap)
-- Multi-asset testing (AAPL, BTC, Gold)
-- Preliminary out-of-sample testing
-
 ### Out-of-Sample Preview
 
 | Asset | In-Sample Sharpe | Out-of-Sample Sharpe |
@@ -135,17 +122,9 @@ Validation steps performed:
 | BTC  | 0.62             | 0.38                |
 | Gold | 0.44             | 0.31                |
 
-Observation:
-
-- Performance degrades but remains positive  
-- Indicates partial robustness  
-- Suggests volatility filtering improves generalization  
-
 ---
 
 ## Correlation & Diversification
-
-### Correlation Matrix
 
 | Asset | AAPL | BTC | Gold |
 |------|------|-----|------|
@@ -153,39 +132,11 @@ Observation:
 | BTC  | 0.25 | 1.00 | 0.05 |
 | Gold | -0.10 | 0.05 | 1.00 |
 
-Insight:
-
-- Low correlation improves diversification  
-- Portfolio-level construction enhances risk-adjusted return  
-
 ---
 
 ## Conclusion
 
 A simple EMA crossover strategy fails to deliver sustainable alpha.
-
-Robust performance requires:
-
-- Regime filtering  
-- Risk-adjusted allocation  
-- Multi-asset diversification  
-
-This project demonstrates the transition from:
-
-> "Single-indicator strategy" → "Systematic alpha framework"
-
----
-
-## Next Steps
-
-To move toward production-grade deployment:
-
-- Multi-factor signal integration  
-- Regime-based filtering (ATR, ADX)  
-- Risk parity / volatility targeting  
-- Portfolio-level Sharpe optimization  
-- Walk-forward validation  
-- Transaction cost & slippage modeling  
 
 ---
 
