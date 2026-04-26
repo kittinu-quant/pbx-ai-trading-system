@@ -204,3 +204,17 @@ To move toward institutional deployment, the next phase will include:
 Objective:
 
 > Transform single-strategy alpha into a scalable portfolio-level return stream.
+
+# Out-of-Sample Validation (Planned)
+
+To verify that the observed improvements are not due to overfitting, the next step includes:
+
+- Train/Test split (e.g., 2020–2022 train, 2023–2025 test)
+- Walk-forward optimization
+- Performance comparison between in-sample vs out-of-sample
+
+Goal:
+
+> Demonstrate that alpha persists beyond the training period.
+
+This is a critical requirement before considering live deployment.
