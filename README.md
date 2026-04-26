@@ -160,3 +160,16 @@ Future work will focus on transforming this baseline system into a production-gr
 The goal is to evolve from:
 
 > "Single-indicator strategy" → "Robust systematic alpha framework"
+
+# Validation Note
+
+All results presented are based on in-sample backtesting.
+
+Next validation steps:
+
+- Out-of-sample testing
+- Walk-forward analysis
+- Cross-asset robustness validation
+- Transaction cost & slippage modeling
+
+Institutional-grade deployment requires passing these validation layers.
