@@ -11,3 +11,11 @@ data = generate_signal(data)
 data = backtest(data)
 
 print(data[['Close','Signal','Equity']])
+
+import matplotlib.pyplot as plt
+
+data = backtest(data)
+
+plt.plot(data['Equity'])
+plt.title("Equity Curve")
+plt.show()
