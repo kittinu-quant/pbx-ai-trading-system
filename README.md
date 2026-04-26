@@ -23,24 +23,32 @@ Author
 
 Kittinu Muayteng
 
-## 📊 Strategy Performance
+#Strategy Performance
 
 Sharpe: 0.199  
 Max Drawdown: -35%  
 
 ![Equity Curve](equity_curve.png)
 
-## Research & Optimization
+# Research & Optimization
 
 - Tested EMA parameter combinations (10–200)
 - Compared performance across multiple assets
 - Observed that naive EMA crossover underperforms buy & hold
 - Next step: integrate volatility filter and risk control
 
-## 🌍 Multi-Asset Results
+#Multi-Asset Results
 
 | Asset | Sharpe | Max Drawdown |
 |------|--------|--------------|
 | AAPL | 0.20 | -35% |
 | BTC  | TBD | TBD |
 | Gold | TBD | TBD |
+> Note: BTC and Gold results will be added after multi-asset backtesting.
+>
+> #Improvement Plan
+
+- Add volatility filter (ATR)
+- Add position sizing
+- Add stop-loss / risk control
+- Improve Sharpe > 1.0 target
