@@ -262,3 +262,5 @@ We analyzed cross-asset correlation:
 | AAPL | 1.00 | 0.25 | -0.10 |
 | BTC  | 0.25 | 1.00 | 0.05 |
 | Gold | -0.10 | 0.05 | 1.00 |
+
+“This project focuses on building a research-driven framework for discovering and validating trading edge, rather than presenting a finished alpha strategy.”
