@@ -1,11 +1,11 @@
-import pandas as pd
+def generate_signal(data, short=20, long=50):
+    data = data.copy()
 
-def generate_signal(data):
-    data['EMA20'] = data['Close'].ewm(span=20).mean()
-    data['EMA50'] = data['Close'].ewm(span=50).mean()
+    data['EMA_S'] = data['Close'].ewm(span=short).mean()
+    data['EMA_L'] = data['Close'].ewm(span=long).mean()
 
     data['Signal'] = 0
-    data.loc[data['EMA20'] > data['EMA50'], 'Signal'] = 1
-    data.loc[data['EMA20'] < data['EMA50'], 'Signal'] = -1
+    data.loc[data['EMA_S'] > data['EMA_L'], 'Signal'] = 1
+    data.loc[data['EMA_S'] < data['EMA_L'], 'Signal'] = -1
 
     return data
