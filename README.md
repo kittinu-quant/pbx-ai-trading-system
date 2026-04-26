@@ -24,6 +24,15 @@ aimed at developing an **institutional-grade alpha engine**.
 
 ---
 
+## 🚀 Quick Summary
+
+- Multi-asset quantitative trading system (AAPL, BTC, Gold)
+- Portfolio Sharpe: 0.72 | Max Drawdown: -22%
+- Includes backtesting, parameter optimization, and out-of-sample validation
+- Focus: building a robust, scalable alpha discovery framework
+
+---
+
 ## Key Results
 
 | Metric | Value |
@@ -48,21 +57,14 @@ This framework focuses on:
 
 ## System Architecture
 
-- **Alpha Engine**  
-  Signal generation using EMA-based strategies  
-
-- **Risk Engine**  
-  Position sizing and drawdown control  
-
-- **Execution Engine**  
-  Backtesting and trade simulation  
-
-- **Portfolio Engine**  
-  Multi-asset allocation and optimization  
+- **Alpha Engine** – EMA-based signal generation  
+- **Risk Engine** – Position sizing and drawdown control  
+- **Execution Engine** – Backtesting and trade simulation  
+- **Portfolio Engine** – Multi-asset allocation and optimization  
 
 ---
 
-## Strategy Performance
+# 📊 Strategy Performance
 
 ![Equity Curve](equity_curve.png)
 
@@ -70,6 +72,14 @@ This framework focuses on:
 |------|------|
 | Sharpe | 0.20 |
 | Max Drawdown | -35% |
+
+---
+
+## Key Observation
+
+- Strategy underperforms buy & hold on AAPL  
+- Naive EMA crossover lacks strong edge  
+- Requires filtering and risk control  
 
 ---
 
@@ -81,11 +91,14 @@ This framework focuses on:
 
 ## Research Findings
 
-Key observations from experiments:
+- Performance varies across parameter space  
+- No stable high-Sharpe region  
+- Strategy is sensitive to parameter selection  
 
-- Naive EMA crossover lacks persistent edge  
-- Performance varies across assets (BTC > AAPL)  
-- High drawdown indicates missing risk control  
+👉 Implication:
+- Need volatility filter  
+- Need position sizing  
+- Need multi-factor signals  
 
 ---
 
@@ -94,13 +107,15 @@ Key observations from experiments:
 ### Allocation Method
 - Inverse volatility weighting
 
+Formula:
+
+w_i = (1 / σ_i) / Σ(1 / σ_i)
+
 ---
 
-## Portfolio Equity Curve
+## 📈 Portfolio Equity Curve
 
 ![Portfolio Equity Curve](Portfolio%20Equity%20Curve.png)
-
-The portfolio demonstrates steady growth with controlled drawdowns.
 
 ---
 
@@ -122,6 +137,9 @@ The portfolio demonstrates steady growth with controlled drawdowns.
 | BTC  | 0.62             | 0.38                |
 | Gold | 0.44             | 0.31                |
 
+- Performance degrades but remains positive  
+- Indicates partial robustness  
+
 ---
 
 ## Correlation & Diversification
@@ -132,11 +150,28 @@ The portfolio demonstrates steady growth with controlled drawdowns.
 | BTC  | 0.25 | 1.00 | 0.05 |
 | Gold | -0.10 | 0.05 | 1.00 |
 
+👉 Diversification improves risk-adjusted return  
+
 ---
 
 ## Conclusion
 
 A simple EMA crossover strategy fails to deliver sustainable alpha.
+
+Robust performance requires:
+
+- Regime filtering  
+- Risk-adjusted allocation  
+- Multi-asset diversification  
+
+---
+
+## Next Steps
+
+- ATR / ADX filtering  
+- Risk parity  
+- Walk-forward validation  
+- Transaction cost modeling  
 
 ---
 
