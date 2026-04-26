@@ -8,15 +8,21 @@ from performance import sharpe_ratio, max_drawdown
 
 
 def main():
-    # Load data
+    # =========================
+    # 1) Load real market data
+    # =========================
     data = yf.download("AAPL", start="2020-01-01", progress=False)
     data = data[['Close']].dropna()
 
-    # Run system
+    # =========================
+    # 2) Run trading system
+    # =========================
     data = generate_signal(data)
     data = backtest(data)
 
-    # Metrics
+    # =========================
+    # 3) Performance metrics
+    # =========================
     returns = data['Strategy'].dropna()
     equity = data['Equity']
 
@@ -27,11 +33,15 @@ def main():
 
     print("Max Drawdown:", round(max_drawdown(equity), 3))
 
-    # Buy & Hold comparison
+    # =========================
+    # 4) Buy & Hold comparison
+    # =========================
     data['BuyHold'] = data['Close'].pct_change().fillna(0)
     data['BuyHold_Equity'] = (1 + data['BuyHold']).cumprod()
 
-    # Plot
+    # =========================
+    # 5) Plot equity curve
+    # =========================
     plt.figure(figsize=(10, 5))
     plt.plot(equity, label="Strategy")
     plt.plot(data['BuyHold_Equity'], label="Buy & Hold", linestyle='--')
@@ -40,6 +50,10 @@ def main():
     plt.ylabel("Equity")
     plt.legend()
     plt.grid()
+
+    # Save image (สำคัญมากสำหรับ GitHub)
+    plt.savefig("equity_curve.png")
+
     plt.show()
 
 
