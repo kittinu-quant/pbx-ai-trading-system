@@ -36,6 +36,10 @@ Max Drawdown: -35%
 - Indicates naive EMA crossover lacks strong edge
 - Further improvements required via filtering and risk control
 
+#Objective
+
+This project focuses on building a systematic framework to discover and improve trading edge through iteration, not just static strategies.
+
 # Research & Optimization
 
 - Tested EMA parameter combinations (10–200)
