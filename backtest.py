@@ -1,9 +1,13 @@
 import pandas as pd
 
-def backtest(data):
-    data['Return'] = data['Close'].pct_change()
-    data['Strategy'] = data['Signal'].shift(1) * data['Return']
+def generate_signal(data):
+    data = data.copy()
 
-    data['Equity'] = (1 + data['Strategy']).cumprod()
+    data['EMA20'] = data['Close'].ewm(span=20).mean()
+    data['EMA50'] = data['Close'].ewm(span=50).mean()
+
+    data['Signal'] = 0
+    data.loc[data['EMA20'] > data['EMA50'], 'Signal'] = 1
+    data.loc[data['EMA20'] < data['EMA50'], 'Signal'] = -1
 
     return data
