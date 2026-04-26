@@ -25,24 +25,30 @@ aimed at developing an **institutional-grade alpha engine**.
 - Includes backtesting, parameter optimization, and out-of-sample validation
 - Focus: building a robust, scalable alpha discovery framework
 
+## Why This Matters
 
-# pbx-ai-trading-system
+Most simple strategies fail due to lack of robustness.
 
-# System Components
+This framework focuses on:
+- Avoiding overfitting through validation
+- Ensuring cross-asset consistency
+- Building scalable alpha beyond a single signal
 
-- **Alpha Engine**: EMA-based signal generation  
-- **Risk Engine**: Position sizing and drawdown control  
-- **Execution Engine**: Backtesting and trade simulation  
-- **Portfolio Engine**: Multi-asset allocation and optimization  
+## pbx-ai-trading-system
 
-### Key Features
+## System Architecture
 
-- EMA-based signal generation (Alpha Engine)
-- Backtesting and trade simulation (Execution Engine)
-- Equity curve and performance evaluation
-- Multi-asset portfolio construction (AAPL, BTC, Gold)
-- Risk management (position sizing, drawdown control)
-- Performance metrics: Sharpe, Max Drawdown, Profit Factor
+- **Alpha Engine**  
+  Signal generation using EMA-based strategies
+
+- **Risk Engine**  
+  Position sizing and drawdown control
+
+- **Execution Engine**  
+  Backtesting and trade simulation
+
+- **Portfolio Engine**  
+  Multi-asset allocation and optimization
 
 "We engineer edge, not just trades."
 
