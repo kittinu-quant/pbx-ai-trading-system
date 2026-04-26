@@ -19,8 +19,13 @@ aimed at developing an **institutional-grade alpha engine**.
 
 
 # pbx-ai-trading-system
-Institutional-grade AI trading system for alpha generation, risk control, and scalable execution
-Overview
+
+# System Components
+
+- **Alpha Engine**: EMA-based signal generation  
+- **Risk Engine**: Position sizing and drawdown control  
+- **Execution Engine**: Backtesting and trade simulation  
+- **Portfolio Engine**: Multi-asset allocation and optimization  
 
 This project demonstrates a quantitative trading framework combining:
 
