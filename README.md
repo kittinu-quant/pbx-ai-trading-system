@@ -79,11 +79,7 @@ This project focuses on building a systematic framework to discover and improve 
 - Max Drawdown < 20%
 - Robust across multiple assets
 
-# Parameter Optimization (Heatmap)
-
-![EMA Heatmap](heatmap.png) 
-
-## Parameter Optimization (EMA Heatmap)
+# Parameter Optimization (EMA Heatmap)
 
 To evaluate robustness, we performed a grid search over EMA parameters:
 
