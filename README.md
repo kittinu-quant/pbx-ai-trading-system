@@ -27,17 +27,14 @@ aimed at developing an **institutional-grade alpha engine**.
 - **Execution Engine**: Backtesting and trade simulation  
 - **Portfolio Engine**: Multi-asset allocation and optimization  
 
-This project demonstrates a quantitative trading framework combining:
+### Key Features
 
-Features
-EMA-based signal generation
-Backtesting engine
-Equity curve simulation
-Performance (Sample)
-Profit Factor: 2.0+
-Win Rate: ~70%
-Max Drawdown: <10%
-Philosophy
+- EMA-based signal generation (Alpha Engine)
+- Backtesting and trade simulation (Execution Engine)
+- Equity curve and performance evaluation
+- Multi-asset portfolio construction (AAPL, BTC, Gold)
+- Risk management (position sizing, drawdown control)
+- Performance metrics: Sharpe, Max Drawdown, Profit Factor
 
 "We engineer edge, not just trades."
 
