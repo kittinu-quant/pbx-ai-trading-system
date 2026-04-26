@@ -62,3 +62,10 @@ This project focuses on building a systematic framework to discover and improve 
 - Add position sizing
 - Add stop-loss / risk control
 - Improve Sharpe > 1.0 target
+
+#Next Experiments
+
+- Add volatility filter (ATR)
+- Test trend regime filter (ADX)
+- Apply position sizing (risk-based)
+- Evaluate performance across BTC, Gold
