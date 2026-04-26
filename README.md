@@ -29,9 +29,6 @@ aimed at developing an **institutional-grade alpha engine**.
 
 This project demonstrates a quantitative trading framework combining:
 
-Strategy (Alpha Engine)
-Risk Management (Risk Engine)
-Execution Logic
 Features
 EMA-based signal generation
 Backtesting engine
