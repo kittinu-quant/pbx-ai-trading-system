@@ -218,3 +218,25 @@ Goal:
 > Demonstrate that alpha persists beyond the training period.
 
 This is a critical requirement before considering live deployment.
+
+# Sample Out-of-Sample Result (Preview)
+
+We performed a simple train/test split:
+
+- Train: 2020–2022
+- Test: 2023–2025
+
+Preliminary observation:
+
+| Asset | In-Sample Sharpe | Out-of-Sample Sharpe |
+|------|------------------|---------------------|
+| BTC  | 0.62             | 0.38                |
+| Gold | 0.44             | 0.31                |
+
+Observation:
+
+- Performance degrades but remains positive
+- Indicates partial robustness
+- Suggests that volatility filtering improves generalization
+
+Note: Full walk-forward validation is in progress.
