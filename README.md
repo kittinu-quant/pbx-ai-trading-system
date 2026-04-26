@@ -132,4 +132,31 @@ This project focuses on building a **systematic framework** for:
 
 - Discovering trading edge through data-driven iteration  
 - Evaluating robustness via parameter sensitivity  
-- Transitioning from simple strategies to scalable alpha systems  
+- Transitioning from simple strategies to scalable alpha systems
+
+# Final Conclusion
+
+This research demonstrates that:
+
+- A simple EMA crossover strategy does not provide sustainable alpha
+- Performance is unstable across parameter configurations
+- The strategy is highly sensitive to parameter selection
+
+From a quantitative perspective:
+
+> This strategy fails the robustness test required for institutional deployment.
+
+---
+
+# Alpha Development Direction
+
+Future work will focus on transforming this baseline system into a production-grade alpha engine:
+
+- Multi-factor signal integration  
+- Regime-based filtering  
+- Portfolio-level optimization  
+- Risk-adjusted capital allocation  
+
+The goal is to evolve from:
+
+> "Single-indicator strategy" → "Robust systematic alpha framework"
