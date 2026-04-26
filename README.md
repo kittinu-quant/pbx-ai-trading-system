@@ -240,3 +240,17 @@ Observation:
 - Suggests that volatility filtering improves generalization
 
 Note: Full walk-forward validation is in progress.
+
+# Asset Correlation
+
+We analyzed cross-asset correlation:
+
+- Low correlation between BTC and Gold
+- Suggests diversification potential
+
+# Portfolio Simulation (Equal Weight)
+
+| Metric | Value |
+|------|------|
+| Sharpe | 0.72 |
+| Max DD | -22% |
