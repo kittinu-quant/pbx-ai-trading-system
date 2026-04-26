@@ -303,7 +303,7 @@ Instead of naive equal weighting, we applied **volatility-adjusted allocation** 
 
 ---
 
-#Methodology
+## Methodology
 
 - Individual asset returns were generated using an EMA-based trading strategy  
 - Portfolio weights were computed using **inverse volatility weighting**
